@@ -1,0 +1,223 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7ff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+
+  .todo-app {
+    max-width: 100%;
+    width: 500px; 
+    margin: auto;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    color: #1565c0;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+
+  .add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+  }
+  
+
+  #taskInput, #taskDate, #taskCategory {
+    flex: 1 1 200px; 
+    padding: 10px;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+
+  #addTaskBtn {
+    padding: 10px 20px;
+    background: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 120px; 
+  }
+  
+  #addTaskBtn:hover {
+    background: #1e88e5;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #bbdefb;
+    font-size: 0.9rem;
+    color: #1565c0;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .filter-btn:hover {
+    background: #42a5f5;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-3px);
+  }
+  
+
+  .task-item.completed {
+    text-decoration: line-through;
+    background: #d7ffd9;
+    border-color: #66bb6a;
+    color: #388e3c;
+  }
+  
+
+  .delete-btn {
+    padding: 5px 15px;
+    background: #ef5350;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #c62828;
+  }
+  
+ 
+  .complete-checkbox {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+
+  .task-item span {
+    flex: 1;
+    font-weight: bold;
+    color: black; 
+  }
+  
+  .task-item span[data-priority="high"] {
+    color: red; 
+  }
+  
+  .task-item span[data-priority="medium"] {
+    color: yellow; 
+  }
+  
+  .task-item span[data-priority="low"] {
+    color: green; 
+  }
+  
+ 
+  #taskCategory, #taskInput, #taskDate {
+    padding: 10px;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  #taskCategory:focus, #taskInput:focus, #taskDate:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+  }
+  
+
+  .task-item span {
+    font-size: 1rem;
+  }
+  
+
+  .task-item.completed {
+    text-decoration: line-through;
+    color: #ccc;
+    background: #e0f7fa; 
+  }
+  
+  input[type="checkbox"]:checked + .delete-btn {
+    background-color: #a9a9a9;
+  }
+  
+
+  button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #c62828;
+  }
+  
+
+.search-container {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    outline: none;
+  }
+  
+  #searchInput:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+  }
